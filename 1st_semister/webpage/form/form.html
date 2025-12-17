@@ -5,25 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="container">
-      <form action="">
-        <h5>Login</h5>
-        <input type="text" placeholder="Username" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="password" required />
-        <button class="btn" value="submit">Submit</button>
-        <label for="">
-          <select name="" id="">
-            <option value="">Nepal</option>
-            <option value="">China</option>
-            <option value="">India</option>
-            <option value="">Brazil</option>
-            <option value="">London</option>
-            <option value="">Japan</option>
-          </select>
-        </label>
+  <body class="flex items-center justify-center bg-gray-400 m-0 p-0">
+    <div class="w-full max-w-md bg-[#e0d8d7] p-6 rounded-xl shadow-xl">
+      <form action="" class="space-y-3">
+        <h5 class="text-xl font-semibold text-center">Registration form</h5>
+        <label class="text-[14px]" for="name">Full Name</label>
+        <input
+          class="w-full p-0.5 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          type="text"
+          placeholder=""
+          required
+        />
+        <label class="text-[14px]" for="email">Email</label>
+        <input
+          class="w-full p-0.5 border rounded focus:outline-none focus-ring-2 focus:ring-blue-400"
+          type="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <label class="text-[14px]" for="phone">Phone Number</label>
+        <input
+          class="w-full p-0.5 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          type="tel"
+          placeholder="+977 0000000000"
+          required
+        />
+        <label class="text-[14px]" for="resume">Upload Resume</label>
+        <input
+          class="w-full p-0.5 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          type="file"
+          id="resume"
+          required
+        />
+        <label class="text-[14px]" for="subject">Subject</label>
+        <input
+          class="w-full p-0.5 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          type="text"
+          name=""
+          id=""
+        />
+        <label for="description">Description</label>
+        <textarea
+          class="w-full p-0.5 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name=""
+          id=""
+        ></textarea>
+        <label class="text-[14px]" for="">Select your Nation</label>
+        <select name="" class="dropDown">
+          <option value="">Nepal</option>
+          <option value="">China</option>
+          <option value="">India</option>
+          <option value="">Brazil</option>
+          <option value="">London</option>
+          <option value="">Japan</option>
+        </select>
+        <br />
+        <button
+          class="bg-blue-600 p-0.5 border rounded-lg text-[14px] hover:bg-blue-900"
+          value="submit"
+        >
+          Submit
+        </button>
       </form>
     </div>
   </body>
