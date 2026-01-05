@@ -14,7 +14,7 @@ body {
   margin: 50px;
 
   border: 7px solid rgb(29, 53, 64);
-  border-radius:10px;
+  border-radius: 10px;
   box-shadow: 0, 0, 0, 10px rgb(42, 41, 41);
 }
 #heading {
@@ -27,6 +27,5 @@ body {
   text-decoration: underline;
   display: flex;
   align-items: center;
-
   justify-content: center;
 }
