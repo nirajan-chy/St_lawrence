@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Relative CSS Example</title>
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 80%;
+        margin: 27px;
+        background-color: #7e1a1a;
+        padding: 5rem;
+      }
+
+      .banner {
+        height: 30vh;
+        background-color: lightcoral;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 30vh;
+      }
+
+      .relative-box {
+        position: relative;
+        top: 5px;
+        left: 0px;
+        background-color: lightgreen;
+        padding: 2rem;
+        width: 46%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="banner">30vh Banner</div>
+
+    <div class="container">
+      <div class="relative-box">position: relative example</div>
+    </div>
+  </body>
+</html>
