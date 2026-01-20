@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int globalVar = 100;
-
 void showLocal() {
     int localVar = 50;
     printf("Inside showLocal function:\n");
