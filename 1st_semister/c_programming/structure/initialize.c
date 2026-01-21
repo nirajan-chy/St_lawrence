@@ -9,7 +9,7 @@ struct student {
 
 int main() {
     struct student s1 = {1, 85.5, "Nirajan"};
-    struct student s2 = {2, 92.0, "Suman"};
+    struct student s2 = {2, 92.0, "Samir mero vai ho : Haat dhog gar babu "};
 
     printf("Student 1:\n");
     printf("Roll: %d\n", s1.roll);
