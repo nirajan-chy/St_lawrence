@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.box2d:hover {
+  transform: rotate(45deg) scale(1.2) translateX(20px);
+}
+
+.box3d {
+  background: #e74c3c;
+}
+
+.box3d:hover {
+  transform: rotateY(45deg) rotateX(20deg) translateZ(50px);
+}
