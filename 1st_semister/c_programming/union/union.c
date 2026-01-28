@@ -14,7 +14,6 @@ int main(){
   id.passwordId = 9876543;
   printf("passwordId : %d  " , id.passwordId);
 
-
-
+  printf("citizenId ; %d  \n" , id.citizenId);
   return 0;
 }
