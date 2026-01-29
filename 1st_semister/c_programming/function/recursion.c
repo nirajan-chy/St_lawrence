@@ -4,7 +4,9 @@ int factorial(int n){
   else return n*factorial(n-1);
 }
 int main (){
-  int num = 5;
+  int num;
+  printf("Enter the number :");
+  scanf("%d" , &num);
   printf("Factorial : %d"  , factorial(num));
   return 0;
 }
