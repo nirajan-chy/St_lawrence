@@ -1,0 +1,37 @@
+*{
+  padding: 0px;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  height: auto;
+  display: grid;
+  place-items: center;
+  background: #e0e5ec;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+
+
+input{
+  width: 300px;
+  padding: 14px;
+  border-radius: 20px;
+  border-style: none;
+
+}
+
+button{
+  width: 300px;
+  padding: 14px;
+  border-radius: 20px;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  border-style: none;
+}
+
+button:hover{
+  background-color: rgb(89, 88, 88);
+}
