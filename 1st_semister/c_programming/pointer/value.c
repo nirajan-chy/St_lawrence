@@ -5,7 +5,7 @@ int main(){
   char name[209] = "samir mero vai ho ";
   
   int *p = &a;
-  char *q = name;   // correct pointer
+  char *q = name;   
 
   // for int 
   printf("Value of a = %d \t", a);
