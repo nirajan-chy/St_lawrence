@@ -30,7 +30,7 @@ int main(void) {
     displayStudent(s1);
 
     printf("\nEnter details for 5 students:\n");
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 2; ++i) {
         printf("\nStudent %d\n", i + 1);
         printf("Roll No: ");
         scanf("%d", &students[i].roll);
