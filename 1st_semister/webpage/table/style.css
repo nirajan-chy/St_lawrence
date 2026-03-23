@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(128, 128, 193);
+}
 .table {
     display: flex;
     margin-top: 8rem;
