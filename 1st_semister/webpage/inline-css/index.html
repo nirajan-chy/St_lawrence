@@ -1,24 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inline css</title>
   </head>
-  <body>
+  <body
+    style="
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(
+        circle at top,
+        #60a5fa 0%,
+        #1e3a8a 40%,
+        #0f172a 100%
+      );
+      color: #e2e8f0;
+    "
+  >
     <div
       style="
-        background-color: blue;
-        justify-content: center;
-        text-align: center;
+        width: min(92%, 760px);
+        padding: 32px;
+        border-radius: 24px;
+        background: rgba(15, 23, 42, 0.72);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 24px 70px rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(10px);
       "
     >
-      <h1 style="color: rgb(254, 254, 255); font-size: large">I am learning inline css</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, et.
-        Provident mollitia eveniet voluptas error nam, numquam veniam non,
-        officia rem dolor vitae voluptatum dolorum quos in vero, quam adipisci!
+      <div
+        style="
+          display: inline-block;
+          padding: 8px 14px;
+          margin-bottom: 18px;
+          border-radius: 999px;
+          background: rgba(96, 165, 250, 0.18);
+          color: #bfdbfe;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+        "
+      >
+        Inline CSS Demo
+      </div>
+
+      <h1
+        style="
+          margin: 0 0 12px;
+          color: #ffffff;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          line-height: 1.1;
+        "
+      >
+        I am learning inline CSS
+      </h1>
+
+      <p
+        style="
+          margin: 0 0 24px;
+          color: #cbd5e1;
+          font-size: 1.05rem;
+          line-height: 1.75;
+          max-width: 62ch;
+        "
+      >
+        Inline CSS is useful when you want to style elements directly inside the
+        HTML tag. This example shows spacing, layout, borders, gradients,
+        badges, and buttons all written without a separate stylesheet.
       </p>
+
+      <div
+        style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px"
+      >
+        <span
+          style="
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            font-size: 14px;
+            font-weight: 700;
+          "
+        >
+          Spacing
+        </span>
+        <span
+          style="
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #dcfce7;
+            color: #166534;
+            font-size: 14px;
+            font-weight: 700;
+          "
+        >
+          Colors
+        </span>
+        <span
+          style="
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #fef3c7;
+            color: #92400e;
+            font-size: 14px;
+            font-weight: 700;
+          "
+        >
+          Borders
+        </span>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a
+          href="#"
+          style="
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
+          "
+        >
+          Get Started
+        </a>
+        <a
+          href="#"
+          style="
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.05);
+          "
+        >
+          Read More
+        </a>
+      </div>
+
+      <div
+        style="
+          margin-top: 28px;
+          padding-top: 20px;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: space-between;
+        "
+      >
+        <div>
+          <div
+            style="
+              color: #93c5fd;
+              font-size: 12px;
+              letter-spacing: 0.12em;
+              text-transform: uppercase;
+              font-weight: 700;
+            "
+          >
+            Tip
+          </div>
+          <div style="color: #ffffff; font-weight: 700; margin-top: 6px">
+            Use inline CSS for small demos and quick examples.
+          </div>
+        </div>
+        <div style="color: #cbd5e1; max-width: 320px; line-height: 1.6">
+          For larger projects, move the styles into a separate CSS file so the
+          HTML stays cleaner and easier to maintain.
+        </div>
+      </div>
     </div>
   </body>
 </html>
