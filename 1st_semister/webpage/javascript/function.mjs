@@ -1,35 +1,42 @@
-// 1) Default parameter function
-const greet = (name = "Guest") => {
-  console.log("Hello, " + name);
+// Types of functions in JavaScript with examples
+
+// 1) Function Declaration
+function multiply(a, b) {
+  return a * b;
+}
+
+// 2) Function Expression
+const divide = function (a, b) {
+  return a / b;
 };
 
-// 2) Return statement function
-const add = (a, b) => {
-  return a + b;
+// 3) Arrow Function
+const greet = (name = "Guest") => `Hello, ${name}`;
+
+// 4) IIFE (Immediately Invoked Function Expression)
+const iifeResult = (function () {
+  return "IIFE runs immediately";
+})();
+
+// 5) Callback Function
+function processNumber(number, callback) {
+  return callback(number);
+}
+
+const square = n => n * n;
+
+// 6) Method Function (function inside object)
+const student = {
+  name: "Nirajan",
+  showName() {
+    return `Student name: ${this.name}`;
+  },
 };
 
-// 3) FizzBuzz function
-const fizzBuzz = (limit = 20) => {
-  for (let i = 1; i <= limit; i++) {
-    if (i % 15 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-    } else {
-      console.log(i);
-    }
-  }
-};
-
-// Example calls
-console.log("--- greet() examples ---");
-greet();
-greet("Bunny");
-
-console.log("\n--- add() example ---");
-console.log("2 + 3 =", add(2, 3));
-
-console.log("\n--- fizzBuzz() example ---");
-fizzBuzz(15);
+// Example output
+console.log("1) Function Declaration:", multiply(4, 5));
+console.log("2) Function Expression:", divide(20, 4));
+console.log("3) Arrow Function:", greet("Bunny"));
+console.log("4) IIFE:", iifeResult);
+console.log("5) Callback Function:", processNumber(6, square));
+console.log("6) Method Function:", student.showName());
