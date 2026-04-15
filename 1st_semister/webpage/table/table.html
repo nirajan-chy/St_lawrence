@@ -1,36 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="table">
-      <h2>Table</h2>
+    <main class="page-shell">
+      <section class="table-card" aria-labelledby="student-table-title">
+        <div class="table-header">
+          <div>
+            <p class="eyebrow">Student Records</p>
+            <h1 id="student-table-title">Advanced Class Table</h1>
+          </div>
+          <p class="table-summary">
+            A cleaner, modern table layout with striped rows, hover states, and
+            responsive spacing.
+          </p>
+        </div>
 
-      <table>
-        <tr>
-          <th>S.N</th>
-          <th>Name</th>
-          <th>Section</th>
-          <th>Faculty</th>
-        </tr>
-
-        <tr>
-          <td>1</td>
-          <td>Nirajan</td>
-          <td>A</td>
-          <td>Science</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Samir</td>
-          <td>A</td>
-          <td>Science</td>
-        </tr>
-      </table>
-    </div>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Students enrolled in the science section
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">S.N</th>
+                <th scope="col">Name</th>
+                <th scope="col">Section</th>
+                <th scope="col">Faculty</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nirajan</td>
+                <td><span class="pill pill-soft">A</span></td>
+                <td>Science</td>
+                <td><span class="pill pill-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Samir</td>
+                <td><span class="pill pill-soft">A</span></td>
+                <td>Science</td>
+                <td><span class="pill pill-success">Active</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ashmita</td>
+                <td><span class="pill pill-soft">B</span></td>
+                <td>Science</td>
+                <td><span class="pill pill-warn">Pending</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Rohan</td>
+                <td><span class="pill pill-soft">C</span></td>
+                <td>Management</td>
+                <td><span class="pill pill-muted">Inactive</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
