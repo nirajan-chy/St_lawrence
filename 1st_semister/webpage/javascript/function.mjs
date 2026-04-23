@@ -116,3 +116,52 @@ console.log(
   "13) Question - Palindrome Check ('hello'):",
   isPalindrome("hello"),
 );
+
+// 14) Practice Question and Solution
+// Question: Write a function to check whether a number is prime.
+function isPrime(number) {
+  if (number <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+    if (number % i === 0) return false;
+  }
+  return true;
+}
+
+console.log("14) Question - Prime Check (17):", isPrime(17));
+console.log("14) Question - Prime Check (18):", isPrime(18));
+
+// 15) Practice Question and Solution
+// Question: Write a function to count vowels in a string.
+function countVowels(text) {
+  return (text.match(/[aeiou]/gi) || []).length;
+}
+
+console.log(
+  "15) Question - Vowel Count ('JavaScript Functions'):",
+  countVowels("JavaScript Functions"),
+);
+
+// 16) Practice Question and Solution
+// Question: Write a function to return the largest number from an array.
+function findLargest(numbers) {
+  return numbers.reduce(
+    (max, value) => (value > max ? value : max),
+    numbers[0],
+  );
+}
+
+console.log(
+  "16) Question - Largest in [4, 10, 2, 89, 7]:",
+  findLargest([4, 10, 2, 89, 7]),
+);
+
+// 17) Practice Question and Solution
+// Question: Write a function to reverse words in a sentence.
+function reverseWords(sentence) {
+  return sentence.split(" ").reverse().join(" ");
+}
+
+console.log(
+  "17) Question - Reverse Words ('I love JavaScript'):",
+  reverseWords("I love JavaScript"),
+);
