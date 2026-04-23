@@ -100,3 +100,19 @@ console.log(
 getMessageAfterDelay().then(message => {
   console.log("12) Async Function:", message);
 });
+
+// 13) Practice Question and Solution
+// Question: Write a function to check whether a string is a palindrome.
+function isPalindrome(text) {
+  const normalized = text.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return normalized === normalized.split("").reverse().join("");
+}
+
+console.log(
+  "13) Question - Palindrome Check ('madam'):",
+  isPalindrome("madam"),
+);
+console.log(
+  "13) Question - Palindrome Check ('hello'):",
+  isPalindrome("hello"),
+);
