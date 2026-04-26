@@ -10,11 +10,9 @@ int main(void) {
     int n, i, j, temp;
 
     printf("Enter number of elements: ");
-    scanf("%d", &n);
-
-    if (n < 2) {
+    if (scanf("%d", &n) != 1 || n < 2) {
         printf("At least 2 elements are required.\n");
-        return 0;
+        return 1;
     }
 
     int a[n];
@@ -39,7 +37,14 @@ int main(void) {
         printf("%d ", a[i]);
     }
 
-    printf("\nSecond largest number: %d\n", a[n - 2]);
+    for (i = n - 2; i >= 0; i--) {
+        if (a[i] != a[n - 1]) {
+            printf("\nSecond largest number: %d\n", a[i]);
+            return 0;
+        }
+    }
+
+    printf("\nNo distinct second largest number exists.\n");
 
     return 0;
 }
