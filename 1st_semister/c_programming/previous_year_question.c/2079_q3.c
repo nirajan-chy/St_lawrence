@@ -31,6 +31,7 @@ int main() {
         printf("A. Find Odd or Even\n");
         printf("B. Find Positive or Negative\n");
         printf("C. Find Factorial\n");
+        printf("E. Enter a new number\n");
         printf("D. Exit\n");
         printf("Enter your choice: ");
         scanf(" %c", &choice); 
@@ -61,6 +62,19 @@ int main() {
                     printf("Factorial = %lld\n", factorial(num));
                 else
                     printf("Factorial not defined for negative numbers\n");
+                break;
+
+            case 'E':
+            case 'e':
+                printf("Enter new number: ");
+                if (scanf("%d", &num) != 1) {
+                    // clear invalid input
+                    int ch;
+                    while ((ch = getchar()) != '\n' && ch != EOF) ;
+                    printf("Invalid input. Number unchanged.\n");
+                } else {
+                    printf("Number updated to %d\n", num);
+                }
                 break;
 
             case 'D':
