@@ -19,6 +19,17 @@ long long factorial(int n) {
     return fact;
 }
 
+// Function to compute sum of digits
+int sum_digits(int n) {
+    if (n < 0) n = -n;
+    int sum = 0;
+    do {
+        sum += n % 10;
+        n /= 10;
+    } while (n > 0);
+    return sum;
+}
+
 int main() {
     int num;
     char choice;
@@ -31,6 +42,7 @@ int main() {
         printf("A. Find Odd or Even\n");
         printf("B. Find Positive or Negative\n");
         printf("C. Find Factorial\n");
+        printf("F. Sum of digits\n");
         printf("E. Enter a new number\n");
         printf("D. Exit\n");
         printf("Enter your choice: ");
@@ -62,6 +74,11 @@ int main() {
                     printf("Factorial = %lld\n", factorial(num));
                 else
                     printf("Factorial not defined for negative numbers\n");
+                break;
+
+            case 'F':
+            case 'f':
+                printf("Sum of digits = %d\n", sum_digits(num));
                 break;
 
             case 'E':
