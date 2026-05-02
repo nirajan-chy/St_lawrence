@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+// Function to display a matrix
+void displayMatrix(int matrix[3][3], char *name) {
+    printf("\n%s:\n", name);
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 int main() {
     int A[3][3], B[3][3], C[3][3];
     int i, j, k;
@@ -20,6 +31,10 @@ int main() {
         }
     }
 
+    // Display input matrices
+    displayMatrix(A, "Matrix A");
+    displayMatrix(B, "Matrix B");
+
     // Initialize result matrix with 0
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
@@ -37,13 +52,7 @@ int main() {
     }
 
     // Display result
-    printf("Resultant matrix:\n");
-    for (i = 0; i < 3; i++) {
-        for (j = 0; j < 3; j++) {
-            printf("%d ", C[i][j]);
-        }
-        printf("\n");
-    }
+    displayMatrix(C, "Result Matrix (A × B)");
 
     return 0;
 }
