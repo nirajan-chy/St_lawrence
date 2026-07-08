@@ -14,7 +14,7 @@ print("Is C is the subSets of A" , C.issubset(A)) # True
 print("The union of A and B = " , A.union(B)) #{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14}
 
 # The intersection of A and C
-print("The interssection of A and C = " , A.intersection(C))  # {1, 3, 5, 7, 9}
+print("The intersection of A and C = " , A.intersection(C))  # {1, 3, 5, 7, 9}
 
 # The difference of A and B 
 print("The difference of A and B = " , A.difference(B)) # {1, 3, 5, 7, 9}
