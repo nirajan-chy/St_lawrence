@@ -4,6 +4,6 @@ int main(){
   int *ptr = &a; 
   printf("%d \n" , *ptr); // value
   printf("%d \n" , a); // 20 value
-  printf("%p \n" , &a); // address
+  printf("%p \n" , &a); 
 
 }
