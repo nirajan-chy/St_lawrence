@@ -3,7 +3,7 @@
 int divide(int a , int b , int *result){
   if(b == 0 ) return -1; //error
   *result = a / b;
-  return 0 ; // success
+  return 0 ;
 }
 int main() {
     int result;
