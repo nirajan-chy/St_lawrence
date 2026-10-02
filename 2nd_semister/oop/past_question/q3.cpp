@@ -48,6 +48,7 @@ class Book : public Author , public Publication {
 
   public :
   void getdata (){
+    // input function 
     Author::getdata();
     Publication::getdata();
 
