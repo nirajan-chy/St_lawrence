@@ -58,6 +58,7 @@ class Book : public Author , public Publication {
     cin >> price ;
   }
   void putdata(){
+    // display function 
     Author::putdata();
     Publication::putdata();
 
