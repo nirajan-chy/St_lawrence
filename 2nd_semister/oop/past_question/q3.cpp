@@ -69,6 +69,7 @@ class Book : public Author , public Publication {
 };
 
 int main (){
+  // main function 
   Book b;
   b.getdata();
   cout << "\n Book details : \n";
