@@ -9,7 +9,7 @@ class STUDENT{
   int marks ;
 
   public :
-  // function to input the details of students 
+  // function to input the details of students .
   void input(){
     cout << "Enter the name of student:";
     cin >> name ;
