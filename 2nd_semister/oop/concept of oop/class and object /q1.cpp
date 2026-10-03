@@ -8,6 +8,13 @@ class Student {
   string name;
   int age ;
 
+  void input(){
+    cout << "Enter name :";
+    cin >> name ;
+    cout << "Enter age :";
+    cin >> age ;
+  }
+
   void display(){
     cout << "Name : "<< name << endl;
     cout << "Age :" << age << endl;
@@ -17,8 +24,9 @@ class Student {
 };
 int main(){
   Student s1;
-  s1.name = "Nirajan ";
-  s1.age = 19;
+  // s1.name = "Nirajan ";
+  // s1.age = 19;
+  s1.input();
   s1.display();
   return 0;
 }
