@@ -26,7 +26,7 @@ using namespace std ;
     return b2 ;
   }
 
-  //function to display book details 
+  //function to display book details .
   void display (){
     cout << "Book Name : " << name << endl;
     cout << "Book Price : " << price << endl;
