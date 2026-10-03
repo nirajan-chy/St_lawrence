@@ -9,7 +9,7 @@ using namespace std ;
   float price ;
 
   public :
-  // Function to input book details 
+  // Function to input book details .
   void input(){
     cout << "Enter book name :";
     cin >> name ;
