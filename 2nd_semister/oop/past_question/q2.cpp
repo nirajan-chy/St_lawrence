@@ -19,7 +19,7 @@ class STUDENT{
   
   }
    
-  // finding the students who take higher marks 
+  // finding the students who take higher marks .
   STUDENT higherMarks(STUDENT s1 , STUDENT s2){
     if(s1.marks > s2.marks)
     return s1 ;
