@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/past_question",
-      "program": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/past_question/build/Debug/outDebug"
+      "cwd": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/class and object ",
+      "program": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/class and object /build/Debug/outDebug"
     }
   ]
 }
