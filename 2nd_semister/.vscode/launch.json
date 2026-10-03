@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/Access Specifiers",
-      "program": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/Access Specifiers/build/Debug/outDebug"
+      "cwd": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/constructor",
+      "program": "/Users/nirmal/Documents/college/St_lawrence/2nd_semister/oop/concept of oop/constructor/build/Debug/outDebug"
     }
   ]
 }
