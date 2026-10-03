@@ -18,7 +18,7 @@ using namespace std ;
     cin >> price ;
 
   }
-  // Member function to find the book with lower price 
+  // Member function to find the book with lower price .
   BOOK lowerPrice(BOOK b1 , BOOK b2){
     if (b1.price < b2.price )
     return b1 ;
